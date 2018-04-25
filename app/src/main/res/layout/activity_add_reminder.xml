@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.codedotman.drugreminder.AddReminder">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/reminder_title"
+            android:hint="Medication Name"
+            android:textSize="25dp"
+            android:lines="4"
+            android:minLines="4"
+            android:textColor="@android:color/white"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/primary_text_disabled_material_dark"
+            android:inputType="textCapWords|textMultiLine"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:text="STARTING FROM"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="setDate"
+        android:id="@+id/date">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/calender_icon"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:layout_height="wrap_content"
+            android:text="DATE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_date"
+                android:textSize="15dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="setTime"
+        android:id="@+id/time"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/time_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:text="TIME"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_time"
+                android:textSize="15dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="32dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginLeft="16dp"
+        android:text="REMINDER FREQUENCY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="selectRepeatType"
+        android:id="@+id/hour"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/repeat_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:layout_height="wrap_content"
+            android:text="INTERVAL"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_repeat_type"
+                android:textSize="15dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:paddingTop="16dp">
+
+
+       <com.getbase.floatingactionbutton.FloatingActionButton
+           android:id="@+id/starred1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:clickable="true"
+           android:onClick="selectFab1"
+           fab:fab_icon="@drawable/ic_action_name22"
+           fab:fab_colorNormal="@color/colorAccent"
+           fab:fab_colorPressed="@color/fab_pressed"
+           app:fab_size="normal"
+           />
+
+       <com.getbase.floatingactionbutton.FloatingActionButton
+           android:id="@+id/starred2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:clickable="true"
+           android:onClick="selectFab2"
+           fab:fab_icon="@drawable/ic_action_name_no_sound"
+           fab:fab_colorNormal="@color/colorAccent"
+           fab:fab_colorPressed="@color/fab_pressed"
+           app:fab_size="normal"
+           />
+
+
+
+
+   </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

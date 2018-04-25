@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_set_reminder"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Set Reminder" />
+        <item
+            android:id="@+id/nav_view_reminder"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="View Reminder" />
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_LogOut"
+                android:icon="@android:drawable/ic_delete"
+                android:title="Log out" />
+
+        </menu>
+    </item>
+
+</menu>

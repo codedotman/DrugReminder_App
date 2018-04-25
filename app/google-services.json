@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "624931247890",
+    "firebase_url": "https://drugreminder-ce857.firebaseio.com",
+    "project_id": "drugreminder-ce857",
+    "storage_bucket": "drugreminder-ce857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624931247890:android:abeb4266ec4c48d1",
+        "android_client_info": {
+          "package_name": "com.codedotman.drugreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624931247890-dcaenb9uu5nglgduhhuacv60qqfrl484.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codedotman.drugreminder",
+            "certificate_hash": "5ccfd7bd3c0cb00eb79f27bde47813eee231f9e4"
+          }
+        },
+        {
+          "client_id": "624931247890-2prkidgqmkp8o4pprir5k5lssntucem7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyjq8Gl-EOWoYTTwVLuKr6sKf8A-LU8ZY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624931247890-2prkidgqmkp8o4pprir5k5lssntucem7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
